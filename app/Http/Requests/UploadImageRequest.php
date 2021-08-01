@@ -29,7 +29,6 @@ class UploadImageRequest extends FormRequest
         ];
     }
 
-
     public function messages()
     {
     return [
@@ -38,6 +37,4 @@ class UploadImageRequest extends FormRequest
       'max' => 'ファイルサイズは2MB以内にしてください。',
       ];
     }
-    
-
 }
