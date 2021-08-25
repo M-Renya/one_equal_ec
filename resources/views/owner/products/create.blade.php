@@ -32,6 +32,7 @@
                               <x-select-image :images="$images" name="image2" />
                               <x-select-image :images="$images" name="image3" />
                               <x-select-image :images="$images" name="image4" />
+                              <x-select-image :images="$images" name="image5" />
                                
 
                               <div class="flex justify-around p-2 w-full mt-4">
