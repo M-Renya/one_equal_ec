@@ -33,7 +33,6 @@ class CartService
             array_push($products, $result);
         }
         
-        dd($products);
         return $products; // 新しい配列を返す
     }
 }
