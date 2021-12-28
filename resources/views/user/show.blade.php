@@ -14,31 +14,31 @@
                       <!-- Slider main container -->
                     <div class="swiper-container">
                       <!-- Additional required wrapper -->
-                      <div class="swiper-wrapper">
+                      <div class="swiper-wrapper z-0">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                          @if ($product->imageFirst->filename !== null)
+                          @if (isset($product->imageFirst->filename))
                             <img src="{{ asset('storage/products/' . $product->imageFirst->filename )}}">
                           @else
                           <img src="">
                           @endif
                         </div>
                         <div class="swiper-slide">
-                          @if ($product->imageSecond->filename !== null)
+                          @if (isset($product->imageSecond->filename))
                             <img src="{{ asset('storage/products/' . $product->imageSecond->filename )}}">
                           @else
                           <img src="">
                           @endif
                         </div>
                         <div class="swiper-slide">
-                          @if ($product->imageThird->filename !== null)
+                          @if (isset($product->imageThird->filename))
                             <img src="{{ asset('storage/products/' . $product->imageThird->filename )}}">
                           @else
                           <img src="">
                           @endif
                         </div>
                         <div class="swiper-slide">
-                          @if ($product->imageFourth->filename !== null)
+                          @if (isset($product->imageFourth->filename))
                             <img src="{{ asset('storage/products/' . $product->imageFourth->filename )}}">
                           @else
                           <img src="">
@@ -101,9 +101,9 @@
         </div>
     </div>
   
-    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+    <div class="modal micromodal-slide z-10" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay z-10" tabindex="-1" data-micromodal-close>
+        <div class="modal__container z-10" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="modal__header">
             <h2 class="text-xl text-gray-700" id="modal-1-title">
               {{ $product->shop->name }}

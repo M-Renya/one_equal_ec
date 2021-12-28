@@ -16,53 +16,83 @@ class CategorySeeder extends Seeder
     {
         DB::table('primary_categories')->insert([
             [
-                'name' => 'キッズファッション',
+                'name' => 'フード',
                 'sort_order' => 1,
             ],
             [
-                'name' => '出産祝い・ギフト',
+                'name' => 'ファッション',
                 'sort_order' => 2,
             ],
             [
-                'name' => 'ベビーカー',
+                'name' => 'ギフト',
                 'sort_order' => 3,
             ],
         ]);
 
         DB::table('secondary_categories')->insert([
             [
-                'name' => '靴',
+                'name' => '肉',
                 'sort_order' => 1,
                 'primary_category_id' => 1,
             ],
             [
-                'name' => 'トップス',
+                'name' => '魚',
                 'sort_order' => 2,
                 'primary_category_id' => 1,
 
             ],
             [
-                'name' => 'バッグ・ランドセル',
+                'name' => '麺',
                 'sort_order' => 3,
                 'primary_category_id' => 1,
 
             ],
             [
-                'name' => 'ギフトセット',
+                'name' => '米',
                 'sort_order' => 4,
-                'primary_category_id' => 2,
+                'primary_category_id' => 1,
 
             ],
             [
-                'name' => 'メモリアル記念品',
+                'name' => '野菜',
                 'sort_order' => 5,
-                'primary_category_id' => 2,
+                'primary_category_id' => 1,
 
             ],
             [
-                'name' => 'おむつケーキ',
+                'name' => 'キャップ',
                 'sort_order' => 6,
                 'primary_category_id' => 2,
+
+            ],
+            [
+                'name' => 'トップス',
+                'sort_order' => 7,
+                'primary_category_id' => 2,
+
+            ],
+            [
+                'name' => 'ボトムス',
+                'sort_order' => 8,
+                'primary_category_id' => 2,
+
+            ],
+            [
+                'name' => 'シューズ',
+                'sort_order' => 9,
+                'primary_category_id' => 2,
+
+            ],
+            [
+                'name' => '食',
+                'sort_order' => 6,
+                'primary_category_id' => 3,
+
+            ],
+            [
+                'name' => '衣類',
+                'sort_order' => 6,
+                'primary_category_id' => 3,
 
             ],
         ]);
