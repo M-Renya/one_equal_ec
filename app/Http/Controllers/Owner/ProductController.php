@@ -160,7 +160,7 @@ class ProductController extends Controller
         if($request->current_quantity !== $quantity){
             $id = $request->route()->parameter('product'); 
             return redirect()->route('owner.products.edit', ['product' => $id])
-            ->with(['message' => '在庫酢が変更しています。再度確認してください。',
+            ->with(['message' => '在庫数が変更しています。再度確認してください。',
             'status' => 'alert']);
         }else{
 
